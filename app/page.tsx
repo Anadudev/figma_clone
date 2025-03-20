@@ -1,10 +1,5 @@
-import { Room } from "@/app/Room";
-import { CollaborativeApp } from "@/app/CollaborativeApp";
-
 export default function Home() {
   return (
-    <Room>
-      <CollaborativeApp />
-    </Room>
+      <h1 className="text-3xl font-bold underline">Hello world</h1>
   );
 }
