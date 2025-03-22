@@ -1,3 +1,4 @@
+"use client";
 import Live from "@/constants/Live";
 
 export default function Home() {

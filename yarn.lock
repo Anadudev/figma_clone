@@ -221,25 +221,25 @@
   resolved "https://registry.yarnpkg.com/@img/sharp-win32-x64/-/sharp-win32-x64-0.33.5.tgz#56f00962ff0c4e0eb93d34a047d29fa995e3e342"
   integrity sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg==
 
-"@liveblocks/client@2.20.0", "@liveblocks/client@^2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@liveblocks/client/-/client-2.20.0.tgz#98b69a7013f5e0d336387cbfe657b1786a8eb122"
-  integrity sha512-Z9oRmj/2zWPrZ9xlBjGOhJPA6xd/xIL3TYAHQno2NaaN+vcpOsaehF9zUEWaBM0+73ddlnxg6zDhDm4unSy1+w==
+"@liveblocks/client@2.22.0", "@liveblocks/client@^2.22.0":
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/@liveblocks/client/-/client-2.22.0.tgz#f58df1b299a028c866b0b1357e7e296182b23665"
+  integrity sha512-+K5uqJRvg4vigEbHQEkIiIA0v7meH7oNyg4mnxFsBbWTQorKxhJbME1eULZwnkZ5l6C1bBrLMuMlGiKiKbKAGQ==
   dependencies:
-    "@liveblocks/core" "2.20.0"
+    "@liveblocks/core" "2.22.0"
 
-"@liveblocks/core@2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@liveblocks/core/-/core-2.20.0.tgz#8e309f72ea51722fd9419ffbc458b588f5215311"
-  integrity sha512-AvNTFhGxqxgZz421VZghDTkzkLm337YO6UQgHh+wHO8uKuYcrX3DUF1+hbPY+YZr8+4sSg5GivdaKR1GSpKAow==
+"@liveblocks/core@2.22.0":
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/@liveblocks/core/-/core-2.22.0.tgz#fd59a44a58c8ee8528322fc4e77b84a01cec36fe"
+  integrity sha512-4FMYq2aoS6vw1qr5CsPF7mt0TrxedVOsTx4O5y1xe18jauE4WD+19llFzg/UGRjUkVaGFicehmu5zG6EhV7dAA==
 
-"@liveblocks/react@^2.20.0":
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/@liveblocks/react/-/react-2.20.0.tgz#dd7b659c2358b33a177ce7e2fbfc18aa33fde043"
-  integrity sha512-OcJKs/Yc6ESKy/Yo5iIDhDj+HKc6GsG2rLMZLWna2pRdfxPLa0ncWYZkhQqu08JSkIMROde/XxKe+BxeIyz9kw==
+"@liveblocks/react@^2.22.0":
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/@liveblocks/react/-/react-2.22.0.tgz#ed0e397264acc433fb378c70977bd869a24d24bb"
+  integrity sha512-+8E7EVTobVZZdN/6mGeCS4qsVxIswKLlPA3I8UI1yYx1MwwB3EGjl8iH9RdEsNnwv+cPyrYImxWIUOq68XYLDQ==
   dependencies:
-    "@liveblocks/client" "2.20.0"
-    "@liveblocks/core" "2.20.0"
+    "@liveblocks/client" "2.22.0"
+    "@liveblocks/core" "2.22.0"
 
 "@mapbox/node-pre-gyp@^1.0.0":
   version "1.0.11"
