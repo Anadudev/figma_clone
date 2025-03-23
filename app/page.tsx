@@ -1,5 +1,4 @@
-"use client";
-import Live from "@/constants/Live";
+import Live from "@/components/Live";
 
 export default function Home() {
   return (

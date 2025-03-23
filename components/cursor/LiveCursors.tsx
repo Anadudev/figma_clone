@@ -1,6 +1,6 @@
 import { LiveCursorProps } from "@/types/types";
 import React from "react";
-import Cursor from "@/constants/cursor/Cursor";
+import Cursor from "@/components/cursor/Cursor";
 import { COLORS } from "@/constants/index";
 
 const LiveCursors: React.FC<LiveCursorProps> = ({ others }) => {
