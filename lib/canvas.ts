@@ -1,4 +1,4 @@
-import { fabric } from "fabric";
+import * as fabric from "fabric";
 import { v4 as uuid4 } from "uuid";
 
 import {
@@ -10,7 +10,7 @@ import {
   CanvasPathCreated,
   CanvasSelectionCreated,
   RenderCanvas,
-} from "@/types/type";
+} from "@/types/types";
 import { defaultNavElement } from "@/constants";
 import { createSpecificShape } from "./shapes";
 
@@ -420,4 +420,3 @@ export const handleCanvasZoom = ({
   options.e.preventDefault();
   options.e.stopPropagation();
 };
-

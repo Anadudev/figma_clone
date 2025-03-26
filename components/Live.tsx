@@ -17,7 +17,11 @@ import FlyingReaction from "@/components/reaction/FlyingReaction";
 import useInterval from "@/hooks/useInterval";
 import { useBroadcastEvent } from "@liveblocks/react/suspense";
 
-const Live = () => {
+type LiveProps = {
+  canvasRef: React.RefObject<HTMLCanvasElement | null>;
+};
+
+const Live: React.FC<LiveProps> = ({ canvasRef }) => {
   const others = useOthers();
   const broadcast = useBroadcastEvent();
 
@@ -28,9 +32,11 @@ const Live = () => {
   });
   const [reaction, setReaction] = useState<Reaction[]>([]);
 
-  useInterval(()=>{
-    setReaction((react) => react.filter((reaction) => reaction.timestamp > Date.now() - 4000));
-  }, 1000)
+  useInterval(() => {
+    setReaction((react) =>
+      react.filter((reaction) => reaction.timestamp > Date.now() - 4000)
+    );
+  }, 1000);
 
   useInterval(() => {
     if (
@@ -67,7 +73,7 @@ const Live = () => {
     if (cursor == null || cursorState.mode !== CursorMode.ReactionSelector) {
       const x = e.clientX - e.currentTarget.getBoundingClientRect().x;
       const y = e.clientY - e.currentTarget.getBoundingClientRect().y;
-      console.log(cursor);
+      // console.log(cursor);
       updateMyPresence({ cursor: { x, y } });
     }
   }, []);
@@ -143,13 +149,14 @@ const Live = () => {
   }, []);
   return (
     <div
+      id="canvas"
       className="h-screen w-full flex justify-center items-center text-center"
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
     >
-      <h1 className="text-2xl">Figma clone</h1>
+      <canvas ref={canvasRef} />
       {reaction.map((react, index) => (
         <FlyingReaction
           key={index}

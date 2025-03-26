@@ -1,4 +1,4 @@
-import { fabric } from "fabric";
+import * as fabric from "fabric";
 import { v4 as uuidv4 } from "uuid";
 
 import {
@@ -6,7 +6,7 @@ import {
   ElementDirection,
   ImageUpload,
   ModifyShape,
-} from "@/types/type";
+} from "@/types/types";
 
 export const createRectangle = (pointer: PointerEvent) => {
   const rect = new fabric.Rect({
@@ -145,7 +145,7 @@ export const modifyShape = ({
   // if  property is width or height, set the scale of the selected element
   if (property === "width") {
     selectedElement.set("scaleX", 1);
-    selectedElement.set("width", value);  
+    selectedElement.set("width", value);
   } else if (property === "height") {
     selectedElement.set("scaleY", 1);
     selectedElement.set("height", value);
