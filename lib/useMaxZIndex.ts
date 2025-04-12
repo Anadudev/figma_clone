@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 
-import { useThreads } from "@/liveblocks.config";
+// import { useThreads } from "@/liveblocks.config";
+import { useThreads } from "@liveblocks/react/suspense";
 
 // Returns the highest z-index of all threads
 export const useMaxZIndex = () => {
@@ -11,9 +12,11 @@ export const useMaxZIndex = () => {
   return useMemo(() => {
     let max = 0;
     for (const thread of threads) {
-      // @ts-ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       if (thread.metadata.zIndex > max) {
-        // @ts-ignore
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         max = thread.metadata.zIndex;
       }
     }
